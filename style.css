@@ -1,0 +1,347 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#fff;
+    color:#1c1c1c;
+}
+
+
+/* HEADER */
+
+header{
+    width:100%;
+    height:80px;
+    display:flex;
+    align-items:center;
+    gap:25px;
+    padding:0 8%;
+    border-bottom:1px solid #eee;
+}
+
+
+.logo{
+    font-size:38px;
+    color:#e23744;
+    font-weight:700;
+}
+
+
+.location{
+    border:1px solid #ddd;
+    padding:14px 18px;
+    border-radius:10px;
+    color:#555;
+}
+
+
+.search{
+    flex:1;
+    max-width:500px;
+    padding:15px 20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    color:#777;
+}
+
+
+.login,
+.signup{
+    font-size:17px;
+    color:#555;
+    cursor:pointer;
+}
+
+
+
+/* TABS */
+
+.tabs{
+    display:flex;
+    gap:45px;
+    padding:30px 8%;
+    border-bottom:1px solid #eee;
+}
+
+
+.tab{
+    font-size:20px;
+    color:#666;
+    padding-bottom:15px;
+}
+
+
+.tab.active{
+    color:#e23744;
+    border-bottom:3px solid #e23744;
+}
+
+
+
+/* FILTERS */
+
+.filters{
+    display:flex;
+    gap:15px;
+    padding:25px 8%;
+}
+
+
+.filters button{
+    background:white;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:12px 22px;
+    font-size:15px;
+    cursor:pointer;
+}
+
+
+.filters button:hover{
+    background:#f8f8f8;
+}
+
+
+
+/* INSPIRATION */
+
+.inspiration{
+    background:#f8f8f8;
+    padding:35px 8%;
+}
+
+
+.inspiration h2{
+    font-size:32px;
+    margin-bottom:30px;
+}
+
+
+.food-list{
+    display:flex;
+    gap:35px;
+    overflow-x:auto;
+}
+
+
+.food{
+    min-width:150px;
+    text-align:center;
+}
+
+
+.food img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+
+.food p{
+    margin-top:12px;
+    font-size:18px;
+}
+
+
+
+/* RESTAURANTS */
+
+.restaurants{
+    padding:40px 8%;
+}
+
+
+.restaurants h1{
+    font-size:32px;
+    margin-bottom:30px;
+}
+
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+
+.card{
+    width:300px;
+    border:1px solid #eee;
+    border-radius:15px;
+    overflow:hidden;
+    background:white;
+    transition:.3s;
+}
+
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+
+.card h3{
+    font-size:20px;
+    margin:15px;
+}
+
+
+.card p{
+    margin:10px 15px;
+    color:#666;
+}
+
+
+.card span{
+    display:inline-block;
+    background:#24963f;
+    color:white;
+    padding:5px 10px;
+    margin:10px 15px 20px;
+    border-radius:5px;
+}
+
+
+
+/* TABLET */
+
+@media(max-width:900px){
+
+header{
+    padding:15px 5%;
+    height:auto;
+    flex-wrap:wrap;
+}
+
+
+.search{
+    order:5;
+    width:100%;
+    max-width:none;
+}
+
+
+.tabs,
+.filters,
+.restaurants,
+.inspiration{
+    padding-left:5%;
+    padding-right:5%;
+}
+
+
+.card{
+    width:260px;
+}
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+.logo{
+    font-size:30px;
+}
+
+
+.location{
+    display:none;
+}
+
+
+.login,
+.signup{
+    font-size:14px;
+}
+
+
+.tabs{
+    gap:20px;
+    overflow-x:auto;
+}
+
+
+.tab{
+    white-space:nowrap;
+}
+
+
+.filters{
+    overflow-x:auto;
+    flex-wrap:nowrap;
+
+}
+
+
+.filters button{
+    white-space:nowrap;
+    
+}
+
+
+.inspiration h2,
+.restaurants h1{
+    font-size:25px;
+}
+
+
+.cards{
+    justify-content:center;
+}
+
+
+.card{
+    width:100%;
+    max-width:350px;
+}
+
+
+.food img{
+    width:120px;
+    height:120px;
+}
+
+}
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:25px;
+}
+
+
+.card{
+    width:100%;
+    border:1px solid #eee;
+    border-radius:15px;
+    overflow:hidden;
+    background:white;
+}
+@media(max-width:700px){
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+}
+input{
+    width: 400px;
+    height: 40px;
+}
+a:hover {
+  color: white;
+}
